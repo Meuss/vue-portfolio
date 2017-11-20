@@ -1,0 +1,81 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  height: 700px;
+  width: 1050px;
+  overflow: hidden;
+}
+.full {
+  background-image: url("full.jpg");
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.corners {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.corner {
+  width: 50%;
+  height: 350px;
+}
+.corner-1 {
+  background-image: url('corner-1.jpg');
+  background-size: contain;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+.corner-1:hover {
+  filter: blur(5px);
+  transform: translate(30px, -30px);
+}
+.corner-2 {
+  background-image: url('corner-2.jpg');
+  background-size: contain;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+.corner-2:hover {
+  filter: blur(5px);
+  transform: translate(30px, 30px);
+}
+.corner-3 {
+  background-image: url('corner-3.jpg');
+  background-size: contain;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+.corner-3:hover {
+  filter: blur(5px);
+  transform: translate(-30px, 30px);
+}
+.corner-4 {
+  background-image: url('corner-4.jpg');
+  background-size: contain;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+.corner-4:hover {
+  filter: blur(5px);
+  transform: translate(-30px, -30px);
+}

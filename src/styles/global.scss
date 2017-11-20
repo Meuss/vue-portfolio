@@ -1,0 +1,95 @@
+@mixin meyer-reset {
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote {
+    &:before, &:after {
+      content: "";
+      content: none;
+    }
+  }
+  q {
+    &:before, &:after {
+      content: "";
+      content: none;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+@include meyer-reset;
+@font-face {
+  font-family: "Proxima Thin";
+  src: url("/static/fonts/Proxima_Nova_Thin.otf");
+}
+@font-face {
+  font-family: "Proxima Light";
+  src: url("/static/fonts/Proxima_Nova_Light.otf");
+}
+@font-face {
+  font-family: "Proxima Regular";
+  src: url("/static/fonts/Proxima_Nova_Regular.otf");
+}
+@font-face {
+  font-family: "Proxima Bold";
+  src: url("/static/fonts/Proxima_Nova_Bold.otf");
+}
+@mixin font-thin {
+  font-family: 'Proxima Thin', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-light {
+  font-family: 'Proxima Light', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-regular {
+  font-family: 'Proxima Regular', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-bold {
+  font-family: 'Proxima Bold', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  min-height: 101vh;
+  display: flex;
+  margin: 0;
+  @include font-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  background-color: #e2e2e2;
+}

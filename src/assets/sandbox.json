@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Canvas Circular",
+    "url": "/static/sb/canvas-circular/index.html",
+    "img": "/static/sandbox-img/circular.jpg"
+  },
+  {
+    "name": "Canvas Fireworks",
+    "url": "/static/sb/canvas-fireworks/index.html",
+    "img": "/static/sandbox-img/fireworks.jpg"
+  },
+  {
+    "name": "Canvas Gravity",
+    "url": "/static/sb/canvas-gravity/index.html",
+    "img": "/static/sandbox-img/gravity.jpg"
+  },
+  {
+    "name": "Canvas Particles",
+    "url": "/static/sb/canvas-particles/index.html",
+    "img": "/static/sandbox-img/particles.jpg"
+  },
+  {
+    "name": "JS Drum kit",
+    "url": "/static/sb/js-drum-kit/index.html",
+    "img": "/static/sandbox-img/drums.jpg"
+  },
+  {
+    "name": "Swiss summoners",
+    "url": "http://swiss-summoners.ch",
+    "img": "/static/sandbox-img/swiss.jpg"
+  },
+  {
+    "name": "Split Slideshow",
+    "url": "/static/sb/slides/index.html",
+    "img": "/static/sandbox-img/slides.jpg"
+  },
+  {
+    "name": "Speech Recognition",
+    "url": "/static/sb/speech-recognition/index.html",
+    "img": "/static/sandbox-img/speech-recognition.jpg"
+  },
+  {
+    "name": "Speech synthesis",
+    "url": "/static/sb/speech-synthesis/index.html",
+    "img": "/static/sandbox-img/speech-synth.jpg"
+  },
+  {
+    "name": "SVG animation TM Coming soon",
+    "url": "/static/sb/tmcomingsoon/index.html",
+    "img": "/static/sandbox-img/svg-tm.jpg"
+  },
+  {
+    "name": "SVG animation TSM Logo",
+    "url": "/static/sb/tsm-logo/index.html",
+    "img": "/static/sandbox-img/svg-tsm.jpg"
+  },
+  {
+    "name": "Veveyse Parallax",
+    "url": "/static/sb/veveyse/index.html",
+    "img": "/static/sandbox-img/veveyse.jpg"
+  },
+  {
+    "name": "JS Memory Game",
+    "url": "/static/sb/memory_game/index.html",
+    "img": "/static/sandbox-img/memory.jpg"
+  },
+  {
+    "name": "Big Cow Restaurant",
+    "url": "/static/sb/bigcow/index.html",
+    "img": "/static/sandbox-img/bigcow.jpg"
+  },
+  {
+    "name": "Ajax to imdb",
+    "url": "/static/sb/tvshows/index.html",
+    "img": "/static/sandbox-img/tvshows.jpg"
+  },
+  {
+    "name": "Image Splitter",
+    "url": "/static/sb/image-splitter/index.html",
+    "img": "/static/sandbox-img/image-splitter.jpg"
+  },
+  {
+    "name": "Whack-a-pawl",
+    "url": "/static/sb/whack-a-pawl/index.html",
+    "img": "/static/sandbox-img/whack-a-pawl.jpg"
+  },
+  {
+    "name": "Vue js Minesweeper",
+    "url": "https://meuss.github.io/minesweeper/index.html",
+    "img": "/static/sandbox-img/minesweeper.jpg"
+  },
+  {
+    "name": "Snake game with JS",
+    "url": "https://codepen.io/Meuss/pen/OOWdZv",
+    "img": "/static/sandbox-img/snake.jpg"
+  }
+]

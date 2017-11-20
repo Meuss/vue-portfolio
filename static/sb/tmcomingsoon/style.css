@@ -1,0 +1,52 @@
+body{
+  background-color: #FF5722;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          height:100vh;
+  margin: 0px;
+}
+#wrapper{
+  cursor: pointer;
+}
+svg{
+  width: 920px;
+  height: 230px;
+  max-width: 90%;
+  margin: 0% 5%;
+}
+
+#Thomas-miller,
+#Coming,
+#soon,
+#o-1,
+#o-2,
+#o-3{
+  fill: #FF5722;
+}
+.filled #Thomas-miller,
+.filled #Coming,
+.filled #o-1,
+.filled #o-2,
+.filled #o-3{
+  fill: black;
+}
+.filled #soon{
+  fill: #FFFFFF;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Synthesis</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="voiceinator">
+
+    <h1>🎧 Speech synthesis 🎧 </h1>
+
+    <select name="voice" id="voices">
+      <option value="">Choisis la voix</option>
+    </select>
+
+    <label for="rate">Speed:</label>
+    <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+
+    <label for="pitch">Pitch:</label>
+
+    <input name="pitch" type="range" min="0" max="2" step="0.1">
+    <textarea name="text">Hi, my name is Paulstovich. I like to 💩, drink vodka and play counter strike. Cyka Blyat</textarea>
+    <button id="stop">🚫</button>
+    <button id="speak">🔊</button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

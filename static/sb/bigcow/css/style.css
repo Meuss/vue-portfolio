@@ -1,0 +1,169 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+h1{
+    color:#ccc;
+    weight: 300;
+}
+figure{
+    margin: auto;
+}
+.content{
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    margin-bottom: 400px;
+}
+.content article{
+    padding: 100px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+@font-face {
+    font-family: Autograf;
+    src: url('../fonts/Autograf_PersonalUseOnly.ttf');
+}
+
+/* Header Parallax */
+.cow-box{
+    position: relative;
+    width: auto;
+    height: 600px;
+    background-image: url("../images/moutains_bg.jpg");
+    background-position: top center;
+    background-size: contain;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 3;
+}
+.logo{
+    height:200px;
+    width: 100%;
+    background-image: url("../images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+}
+.cow{
+    width: 960px;
+    height:411px;
+    background-image: url("../images/cow.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    left: 50%;
+    margin-left: -360px;
+    top: 380px;
+}
+.back-bird{
+    width: 960px;
+    height: 298px;
+    background-image: url("../images/back-bird.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+}
+/* Grid pics and animations*/
+
+.meat-pics {
+    margin-bottom: 100px; }
+
+.meat-pics figure {
+    margin: 6px 10px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer; }
+
+.meat-pics figure.is-showing {
+    opacity: 1;
+    transform: translateX(0px); }
+
+.meat-pics figure img {
+    display: block;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out; }
+
+.meat-pics figure:hover figcaption {
+    left: 0%; }
+
+.meat-pics figure:hover img {
+    transform: scale(1.1); }
+
+.meat-pics figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out; }
+
+/* Periscope */
+.large-window{
+    height: 640px;
+    background-image: url("../images/burger.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top:80px;
+    margin-bottom: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+.large-window .window-tint{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+}
+.large-window .promo-text{
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+.large-window .promo-text strong{
+    display: block;
+    font-size: 30px;
+}
+
+
+/* Footer */
+footer{
+    background: black;
+    color: white;
+    padding: 40px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer .footer-stuff{
+    max-width: 640px;
+    margin: 0 auto;
+
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.signature{
+    font-family: "Autograf", sans-serif;
+    font-size: 30px;
+}

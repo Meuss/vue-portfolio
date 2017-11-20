@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ShopTalk Show",
+    "desc": "An internet radio show about the internet starring Dave Rupert and Chris Coyier.",
+    "url": "http://shoptalkshow.com/",
+    "img": "/static/podcasts-img/shoptalkshow.jpg"
+  },
+  {
+    "name": "Syntax",
+    "desc": "Tasty Treats for Web Developers, with Wes Bos and Scott Tolinski.",
+    "url": "https://syntax.fm/",
+    "img": "/static/podcasts-img/syntax.jpg"
+  },
+  {
+    "name": "Front End Happy Hour",
+    "desc": "A podcast featuring panelists of engineers from Netflix, Evernote & LinkedIn talking over drinks about all things Front End development.",
+    "url": "http://frontendhappyhour.com/",
+    "img": "/static/podcasts-img/frontendhappyhour.jpg"
+  },
+  {
+    "name": "HTTP 203",
+    "desc": "Fun talks with Jake Archibal and Paul Lewis",
+    "url": "https://developers.google.com/web/shows/http203/podcast/",
+    "img": "/static/podcasts-img/http203.jpg"
+  },
+  {
+    "name": "Javascript Jabber",
+    "desc": "Weekly discussion about JavaScript, front-end development, community, careers, and frameworks.",
+    "url": "https://devchat.tv/js-jabber",
+    "img": "/static/podcasts-img/jsjabber.jpg"
+  },
+  {
+    "name": "Boagworld",
+    "desc": "Paul Boag and Marcus Lillington are joined by a variety of guests to discuss a range of web design related topics.",
+    "url": "https://boagworld.com/show/",
+    "img": "/static/podcasts-img/boagworld.jpg"
+  },
+  {
+    "name": "The Stack overflow podcast",
+    "desc": "The Stack Overflow Podcast lets you listen in on what’s new with the world’s largest developer community.",
+    "url": "https://stackoverflow.blog/podcasts/",
+    "img": "/static/podcasts-img/stackoverflow.jpg"
+  },
+  {
+    "name": "Codepen Radio",
+    "desc": "A podcast all about what it's like running a small web software business. The good, the bad, and the ugly.",
+    "url": "https://blog.codepen.io/radio/",
+    "img": "/static/podcasts-img/codepenradio.jpg"
+  }
+]
