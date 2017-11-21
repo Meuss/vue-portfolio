@@ -1,15 +1,21 @@
 <template>
-  <div class="outer">
+  <div class="homepage">
     <div class="image"></div>
-    <div class="tm">
-      <h1>Thomas</h1>
-      <h1>Miller</h1>
+    <div class="homepage-content">
+      <div class="tm">
+        <h1>Thomas</h1>
+        <h1>Miller</h1>
+      </div>
+      <socials></socials>
+      <p>I’m frontend web developer from Switzerland, currently working at a small agency called macmac.</p>
+      <p>One day I decided I wanted to know how the internet worked. I haven’t stopped learning since.</p>
     </div>
-    <p>I’m frontend web developer from Switzerland, currently working at mamac ltd. One day I decided I wanted to know how the internet worked. I haven’t stopped learning and creating websites since that day.</p>
   </div>
 </template>
 
 <script>
+import Socials from './Socials';
+
 export default {
   name: 'Home',
   data() {
@@ -17,36 +23,42 @@ export default {
       // title: 'Home Page',
     };
   },
+  components: {
+    socials: Socials,
+  },
 };
+
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import '~@/styles/global.scss';
-.outer {
+.homepage {
   height: 100%;
   display: flex;
   position: relative;
 }
 .image {
   height: 100%;
-  width: 25%;
+  width: calc(100% / 3);
   background-image: url("/static/me_popart.jpg");
   background-size: cover;
   background-position: center center;
-  filter: grayscale(0.5);
+  filter: grayscale(0);
+}
+.homepage-content {
+  padding: 35vh 60px 60px 60px;
 }
 .tm {
-  position: absolute;
-  top: 50%;
-  left: 23%;
-  transform: translateY(-50%);
+  transform: translateX(-6vw);
   color: black;
   @include font-bold;
   h1 {
-    font-size: 90px;
-    line-height: 65px;
-    margin: 0px;
+    font-size: 100px;
+    line-height: 85px;
+    margin-bottom: 0px;
   }
+  margin-bottom: 50px;
 }
+
+
 </style>

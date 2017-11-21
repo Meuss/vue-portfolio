@@ -9,12 +9,18 @@
     <transition name="fade">
       <router-view></router-view>
     </transition>
+    <footer>
+      <p>Copyright © 2017 Thomas Miller</p>
+    </footer>
   </div>
 </template>
 
 <script>
 export default {
+  /* eslint-disable */
   name: 'app',
+  methods: {
+  },
 };
 </script>
 
@@ -23,46 +29,28 @@ export default {
 .projects,
 .sandbox,
 .resources {
+  padding: 100px 0px;
   max-width: 1100px;
-  margin: 0 auto;  
-}
-#app {
-  width: 100%;
-}
-nav {
-  z-index: 1;
-  position: absolute;
-  top: 100px;
-  right: 100px;
-  display: flex;
-  flex-direction: column;
-  a {
-    margin-right: 20px
+  margin: 0 auto;
+  .sandboxes,
+  .wrapper {
+    margin-top: 30px;
   }
-}
-h1,
-h2 {
-  font-weight: normal;
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition-property: opacity;
-  transition-duration: .25s;
+  transition-property: all;
+  transition-duration: 0.25s;
 }
 
 .fade-enter-active {
-  transition-delay: .25s;
+  transition-delay: 0.25s;
 }
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
+
 </style>

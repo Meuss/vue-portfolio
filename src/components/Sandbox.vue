@@ -41,6 +41,13 @@ export default {
     position: relative;
     background: lighten(#f8f8f8, 3%);
   }
+  .image-wrapper {
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
   img {
     max-width: 100%;
   }

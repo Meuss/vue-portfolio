@@ -1,6 +1,7 @@
 <template>
   <div class="projects">
     <h1>{{ title }}</h1>
+    <p>Most of these were built while working at macmac.</p>
     <ul class="wrapper">
       <li v-for="project in projects">
         <a :href="project.url" target="_blank">
@@ -32,7 +33,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   li {
     position: relative;

@@ -4,6 +4,7 @@
     <p>A collection of resources I love and want to share for any other webdevs out there.</p>
     <youtube :video-id="videoId" ref="youtube"></youtube>
     <h2>Podcasts</h2>
+    <p>Because work commutes can be long.</p>
     <ul class="podcasts">
       <li v-for="podcast in podcasts">
         <img :src="podcast.img" :alt="podcast.name" @click="handleClick(podcast)" class="podcast-img">
