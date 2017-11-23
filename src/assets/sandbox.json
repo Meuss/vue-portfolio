@@ -45,12 +45,12 @@
     "img": "/static/sandbox-img/speech-synth.jpg"
   },
   {
-    "name": "SVG animation TM Coming soon",
+    "name": "SVG animation",
     "url": "/static/sb/tmcomingsoon/index.html",
     "img": "/static/sandbox-img/svg-tm.jpg"
   },
   {
-    "name": "SVG animation TSM Logo",
+    "name": "SVG animation",
     "url": "/static/sb/tsm-logo/index.html",
     "img": "/static/sandbox-img/svg-tsm.jpg"
   },

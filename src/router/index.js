@@ -4,6 +4,7 @@ import Home from '@/components/Home';
 import Projects from '@/components/Projects';
 import Sandbox from '@/components/Sandbox';
 import Resources from '@/components/Resources';
+import Skills from '@/components/Skills';
 import Page404 from '@/components/Page404';
 
 Vue.use(Router);
@@ -29,6 +30,11 @@ export default new Router({
       path: '/resources',
       name: 'Resources',
       component: Resources,
+    },
+    {
+      path: '/skills',
+      name: 'Skillss',
+      component: Skills,
     },
     {
       path: '*',

@@ -1,6 +1,6 @@
 <template>
   <div class="socials">
-    <a href="mailto:thomas.miller147@gmail.com" :class="{hideSome: hideSome}" @mouseover="hideSome = true" @mouseleave="hideSome = false">
+    <a href="mailto:thomas.miller147@gmail.com">
       <svg width="30px" height="22px" viewBox="0 0 30 22">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-525.000000, -576.000000)" fill-rule="nonzero" fill="#030104">
@@ -16,7 +16,7 @@
         </g>
       </svg>
     </a>
-    <a href="https://www.linkedin.com/in/thomas-miller-671589a3/" :class="{hideSome: hideSome}" @mouseover="hideSome = true" @mouseleave="hideSome = false">
+    <a href="https://www.linkedin.com/in/thomas-miller-671589a3/">
       <svg width="26px" height="26px" viewBox="0 0 26 26">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-566.000000, -574.000000)">
@@ -32,7 +32,7 @@
         </g>
       </svg>
     </a>
-    <a href="https://github.com/Meuss" :class="{hideSome: hideSome}" @mouseover="hideSome = true" @mouseleave="hideSome = false">
+    <a href="https://github.com/Meuss">
       <svg width="27px" height="26px" viewBox="0 0 27 26">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-600.000000, -573.000000)" fill-rule="nonzero" fill="#161614">
@@ -45,7 +45,7 @@
         </g>
       </svg>
     </a>
-    <a href="https://codepen.io/Meuss/" :class="{hideSome: hideSome}" @mouseover="hideSome = true" @mouseleave="hideSome = false">
+    <a href="https://codepen.io/Meuss/">
       <svg width="28px" height="28px" viewBox="0 0 28 28">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-635.000000, -573.000000)" fill-rule="nonzero" fill="#000000">
@@ -58,7 +58,7 @@
         </g>
       </svg>
     </a>
-    <a href="https://twitter.com/Meuss_n1" :class="{hideSome: hideSome}" @mouseover="hideSome = true" @mouseleave="hideSome = false">
+    <a href="https://twitter.com/Meuss_n1">
       <svg width="26px" height="21px" viewBox="0 0 26 21">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-673.000000, -576.000000)" fill-rule="nonzero" fill="#010002">
@@ -80,7 +80,7 @@ export default {
   name: 'socials',
   data() {
     return {
-      hideSome: false,
+
     };
   },
   methods: {
@@ -99,8 +99,5 @@ export default {
 }
 a {
   transition: opacity 0.2s ease-out;
-}
-.hideSome {
-  opacity: 0.7;
 }
 </style>

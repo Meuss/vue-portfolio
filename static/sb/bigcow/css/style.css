@@ -35,7 +35,7 @@ img{
     height: 600px;
     background-image: url("../images/moutains_bg.jpg");
     background-position: top center;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
     z-index: 3;

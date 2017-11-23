@@ -1,87 +1,110 @@
 [
   {
-    "name": "Metzgerei-Aeberhard",
-    "url": "http://metzgerei-aeberhard.ch/",
-    "img": "/static/project-img/aeberhard.jpg"
-  },
-  {
-    "name": "Bimbosan",
-    "url": "http://bimbosan.ch/",
-    "img": "/static/project-img/bimbosan.jpg"
-  },
-  {
-    "name": "Bern Bubenberg",
-    "url": "http://bern-bubenberg.ch/",
-    "img": "/static/project-img/bubenberg.jpg"
-  },
-  {
-    "name": "Isler & Pedrazzini",
-    "url": "http://www.islerpedrazzini.ch/en",
-    "img": "/static/project-img/isler.jpg"
-  },
-  {
-    "name": "Easy Tube",
-    "url": "http://easytube.ch/",
-    "img": "/static/project-img/easytube.jpg"
-  },
-  {
-    "name": "Hertigfleurs",
-    "url": "https://hertigfleurs.ch/",
-    "img": "/static/project-img/hertigfleurs.jpg"
-  },
-  {
-    "name": "Kaeserei",
-    "url": "http://kaeserei-murten.ch/fr",
-    "img": "/static/project-img/kaeserei.jpg"
-  },
-  {
-    "name": "Walter Nydegger",
-    "url": "http://nydeggerwalter.ch/",
-    "img": "/static/project-img/nydegger.jpg"
-  },
-  {
     "name": "Probation Works",
+    "shortname": "probation",
     "url": "https://stories.prison.ch/fr/probation-works-2/introduction/",
     "img": "/static/project-img/probationworks.jpg"
   },
   {
-    "name": "Professions en exécution des sanctions",
-    "url": "https://stories.prison.ch/fr/professions/",
-    "img": "/static/project-img/professions.jpg"
-  },
-  {
-    "name": "Gestion de la transition",
-    "url": "https://stories.prison.ch/fr/gestion-de-la-transition/",
-    "img": "/static/project-img/transition.jpg"
-  },
-  {
-    "name": "Vulnérabilités en détention",
-    "url": "https://stories.prison.ch/fr/vulnerabilites-en-detention/",
-    "img": "/static/project-img/vulnerabilites.jpg"
-  },
-  {
-    "name": "Matuzon",
-    "url": "http://matuzon.ch/",
-    "img": "/static/project-img/matuzon.jpg"
-  },
-  {
-    "name": "Whiskytrain",
-    "url": "http://whiskytrain.ch/",
-    "img": "/static/project-img/whiskytrain.jpg"
-  },
-  {
-    "name": "Singlemalt-shop",
-    "url": "http://singlemalt-shop.ch/",
-    "img": "/static/project-img/sms.jpg"
+    "name": "Bimbosan",
+    "shortname": "bimbosan",
+    "url": "http://bimbosan.ch/",
+    "img": "/static/project-img/bimbosan.jpg"
   },
   {
     "name": "Tsantsa",
+    "shortname": "tsantsa",
     "url": "http://tsantsa.ch/en",
     "img": "/static/project-img/tsantsa.jpg"
   },
   {
+    "name": "Kaeserei",
+    "shortname": "kaeserei",
+    "url": "http://kaeserei-murten.ch/fr",
+    "img": "/static/project-img/kaeserei.jpg"
+  },
+  {
+    "name": "Easy Tube",
+    "shortname": "easytube",
+    "url": "http://easytube.ch/",
+    "img": "/static/project-img/easytube2.jpg"
+  },
+  {
+    "name": "Professions...",
+    "shortname": "professions",
+    "url": "https://stories.prison.ch/fr/professions/",
+    "img": "/static/project-img/professions.jpg"
+  },
+  {
     "name": "CCI-Cotting",
+    "shortname": "cci",
     "url": "http://cci-cotting.ch/",
     "img": "/static/project-img/cci.jpg"
+  },
+  {
+    "name": "Isler & Pedrazzini",
+    "shortname": "ip",
+    "url": "http://www.islerpedrazzini.ch/en",
+    "img": "/static/project-img/isler.jpg"
+  },
+  {
+    "name": "Walter Nydegger",
+    "shortname": "nydegger",
+    "url": "http://nydeggerwalter.ch/",
+    "img": "/static/project-img/nydegger.jpg"
+  },
+  {
+    "name": "Metzgerei-Aeberhard",
+    "shortname": "aeberhard",
+    "url": "http://metzgerei-aeberhard.ch/",
+    "img": "/static/project-img/aeberhard.jpg"
+  },
+  {
+    "name": "Singlemalt-shop",
+    "shortname": "sms",
+    "url": "http://singlemalt-shop.ch/",
+    "img": "/static/project-img/sms.jpg"
+  },
+  {
+    "name": "Bern Bubenberg",
+    "shortname": "bubenberg",
+    "url": "http://bern-bubenberg.ch/",
+    "img": "/static/project-img/bubenberg.jpg"
+  },
+  {
+    "name": "Hertigfleurs",
+    "shortname": "hertigfleurs",
+    "url": "https://hertigfleurs.ch/",
+    "img": "/static/project-img/hertigfleurs.jpg"
+  },
+  {
+    "name": "Whiskytrain",
+    "shortname": "whiskytrain",
+    "url": "http://whiskytrain.ch/",
+    "img": "/static/project-img/whiskytrain.jpg"
+  },
+  {
+    "name": "Gestion de la transition",
+    "shortname": "transition",
+    "url": "https://stories.prison.ch/fr/gestion-de-la-transition/",
+    "img": "/static/project-img/transition.jpg"
+  },
+  {
+    "name": "Matuzon",
+    "shortname": "natuzon",
+    "url": "http://matuzon.ch/",
+    "img": "/static/project-img/matuzon.jpg"
+  },
+  {
+    "name": "Golf des Dents du Midi",
+    "shortname": "sdgdm",
+    "url": "http://sdgdm.ch/",
+    "img": "/static/project-img/sdgdm.jpg"
+  },
+  {
+    "name": "Vulnérabilités en détention",
+    "shortname": "vulnerabilites",
+    "url": "https://stories.prison.ch/fr/vulnerabilites-en-detention/",
+    "img": "/static/project-img/vulnerabilites.jpg"
   }
 ]

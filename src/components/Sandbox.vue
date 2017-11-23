@@ -33,6 +33,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '~@/styles/variables.scss';
 .sandboxes {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -52,31 +53,29 @@ export default {
     max-width: 100%;
   }
   a {
+    display: block;
     transition: transform .5s;
     text-decoration: none;
     color: #333;
+    z-index: 1;
     &::after {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
       box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
       content: '';
-      opacity: 0;
       z-index: -1;
     }
     &:hover,
     &:focus {
       transform: scale3d(1.006, 1.006, 1);
-      &::after {
-        opacity: 1;
-      }
     }
   }
   .card-title {
-    margin: 10px 0px;
+    // margin: 10px 0px;
+    padding: 10px;
     text-align: center;
   }
 }

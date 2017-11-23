@@ -1,0 +1,43 @@
+$lightblue: #A6FFE0;
+$darkblue: #022B3A;
+$blue: #1F7A8C;
+$lightgray: #E1E5F2;
+$white: #fff;
+$red: #8C311F;
+$black: #333;
+@font-face {
+  font-family: "Proxima Thin";
+  src: url("/static/fonts/Proxima_Nova_Thin.otf");
+}
+@font-face {
+  font-family: "Proxima Light";
+  src: url("/static/fonts/Proxima_Nova_Light.otf");
+}
+@font-face {
+  font-family: "Proxima Regular";
+  src: url("/static/fonts/Proxima_Nova_Regular.otf");
+}
+@font-face {
+  font-family: "Proxima Bold";
+  src: url("/static/fonts/Proxima_Nova_Bold.otf");
+}
+@mixin font-thin {
+  font-family: 'Proxima Thin', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-light {
+  font-family: 'Proxima Light', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-regular {
+  font-family: 'Proxima Regular', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-bold {
+  font-family: 'Proxima Bold', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
