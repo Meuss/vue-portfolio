@@ -93,5 +93,10 @@
     "name": "Snake game with JS",
     "url": "https://codepen.io/Meuss/pen/OOWdZv",
     "img": "/static/sandbox-img/snake.jpg"
+  },
+  {
+    "name": "Memory with Vue js",
+    "url": "/static/sb/memory_game/index.html",
+    "img": "/static/sandbox-img/swiss-memory.jpg"
   }
 ]

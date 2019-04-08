@@ -5,7 +5,7 @@
 
 $(function(){
     $(".typedtitle").typed({
-        strings: ["Hello","I'm Thomas.","Here is a list of a few of my favorite TV Shows"],
+        strings: ["Hello","I'm learning webdev.","Here is a list of a few of my favorite TV Shows(not updated)"],
         typeSpeed: 100,
         startDelay: 1000,
         backDelay:1000,

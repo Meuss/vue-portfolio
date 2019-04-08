@@ -1,13 +1,16 @@
 <template>
-  <div class="projects">
+  <div class="projects loading">
     <h1>{{ title }}</h1>
     <p>Most of these were built while working at macmac.</p>
+    <p>Feel free to visit them, keep in mind we have a great designer at macmac :-)</p>
     <ul class="wrapper">
       <li v-for="project in projects"  :class="project.shortname">
         <a :href="project.url" target="_blank">
           <div class="image-wrapper" :style="{ backgroundImage: 'url(' + project.img + ')' }">
           </div>
-          <div class="card-title">{{project.name}}</div>
+          <div class="project-title-wrapper">
+            <div class="project-title">{{project.name}}</div>
+          </div>
         </a>
       </li>
     </ul>
@@ -15,7 +18,10 @@
 </template>
 
 <script>
+/* eslint-disable */
+// import anime from 'animejs';
 import projects from '../assets/projects.json';
+/* eslint-enable */
 
 export default {
   name: 'Projects',
@@ -42,7 +48,7 @@ export default {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 228px);
+  grid-template-rows: repeat(7, 228px);
   grid-gap: 30px;
   li {
     position: relative;
@@ -51,67 +57,107 @@ export default {
       grid-column: 1/3;
       grid-row: 1/3;
     }
+    &.adler {
+      grid-column: 3/5;
+      grid-row: 1/2;
+      .image-wrapper {
+        background-position: center center;
+      }
+    }
     &.easytube {
       grid-column: 3/4;
       grid-row: 2/4;
+    }
+    &.bimbosan {
+      grid-column: 4/6;
+      grid-row: 2/3;
     }
     &.aeberhard {
       grid-column: 4/6;
       grid-row: 3/5;
     }
+    &.bubenberg {
+      .image-wrapper {
+        background-position: -7px top;
+      }
+    }
     &.sms {
-      grid-column: 1/3;
-      grid-row: 4/5;
+      grid-column: 4/6;
+      grid-row: 6/8;
+      .image-wrapper {
+        background-position: center center;
+      }
     }
     &.hertigfleurs {
       grid-column: 1/3;
       grid-row: 5/7;
     }
+    &.nydegger {
+      .image-wrapper {
+        background-position: left top;
+      }
+    }
     &.vulnerabilites {
-      grid-column: 4/6;
-      grid-row: 6/7;
+      grid-column: 1/3;
+      grid-row: 4/5;
+    }
+    &.sdgdm {
+      .image-wrapper {
+        background-position: left top;
+      }
+    }
+    &.matuzon {
+
     }
   }
-  img {
-    max-width: 100%;
-  }
   a {
-    // display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    transition: transform .5s;
     text-decoration: none;
     color: $black;
-    -webkit-backface-visibility: hidden; // trying to remove the blur
-    transform: translateZ(0) scale(1.0, 1.0); // trying to remove the blur
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
-      content: '';
-      z-index: -1;
-    }
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.16);
+    transition: box-shadow .25s;
     &:hover,
     &:focus {
-      // transform: scale3d(1.006, 1.006, 1);
-      transform: scale(1.05);
+      box-shadow: 0 15px 60px 0 rgba(0,0,0,0.2), 0 15px 30px 0 rgba(0,0,0,0.1);
+      // .project-title-wrapper {
+      //   opacity: 1;
+      //   transition: opacity 0.4s ease-in;
+      // }
+      // .image-wrapper {
+      //   opacity: 0.9;
+      //   transition: opacity 0.4s ease-in;
+      // }
     }
   }
   .image-wrapper {
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     flex: 1;
+    transition: opacity 0.4s ease-in 0.25s;
   }
-  .card-title {
-    padding: 10px;
-    text-align: center;
-    background-color: #333;
-    color: white;
+  .project-title-wrapper {
+    display: none;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    // color: $white;
+    // padding: 20px;
+    // @include font-bold;
+    // opacity: 0;
+    // transition: opacity 0.4s ease-in 0.25s;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // .project-title {
+    //   background-color: $darkblue;
+    //   padding: 10px 20px;
+    // }
   }
 }
 </style>

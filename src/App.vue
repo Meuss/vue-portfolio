@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <nav>
+    <!-- <nav>
       <router-link to="/">Home</router-link>
       <router-link to="/projects">Web Projects</router-link>
-      <router-link to="/sandbox">Sandbox</router-link>
+      <router-link to="/sandbox">Learning Projects</router-link>
       <router-link to="/resources">Resources</router-link>
       <router-link to="/skills">Skills</router-link>
-    </nav>
+    </nav> -->
+
     <transition name="fade">
       <router-view></router-view>
     </transition>
     <footer>
-      <p>Copyright © 2017 Thomas Miller</p>
+      <p>© {{ new Date().getFullYear() }} Thomas Miller</p>
     </footer>
   </div>
 </template>
@@ -20,23 +21,21 @@
 import 'normalize.css';
 
 export default {
-  /* eslint-disable */
   name: 'app',
-  methods: {
-  },
+  methods: {},
 };
 </script>
 
 <style lang="scss">
 @import '~@/styles/variables.scss';
-@import '~@/styles/global.scss';
+@import '~@/styles/reset.scss';
 body {
-  min-height: 101vh;
+  min-height: 100vh;
   display: flex;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $black;
+  color: $darkblue;
   background-color: $lightgray;
   @include font-regular;
   font-size: 18px;
@@ -50,7 +49,8 @@ body {
 
 h1,
 h2 {
-  font-weight: normal;
+  @include font-bold;
+  letter-spacing: -1px;
   font-size: 40px;
   line-height: 45px;
   margin-bottom: 30px;
@@ -59,17 +59,16 @@ p {
   margin-bottom: 10px;
 }
 nav {
-  a {
-    color: $black;
-    margin-bottom: 20px;
-  }
-  z-index: 1;
   position: absolute;
-  top: 100px;
-  right: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  a {
+    padding: 10px 20px;
+    color: $darkblue;
+  }
 }
 footer {
   font-size: 12px;
@@ -92,13 +91,13 @@ footer {
 }
 .block-revealer__element {
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   pointer-events: none;
   opacity: 0;
-  background-color: #f08080!important;
+  background-color: $blue !important;
 }
 .block-revealer__content {
   background-color: transparent;
@@ -118,5 +117,4 @@ footer {
 .fade-leave-active {
   opacity: 0;
 }
-
 </style>
