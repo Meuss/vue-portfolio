@@ -17,9 +17,11 @@
           </div>
         </div>
         <div class="line"></div>
-        <p>Frontend web developer from Switzerland.</p>
-        <p>Currently looking for a new position, open to freelance projects.</p>
-        <p>I'm rebuilding my portfolio, it will be online in a couple weeks.</p>
+        <div class="desc">
+          <p>Frontend web developer from Bulle, Switzerland.</p>
+          <p>Currently creating awesome stuff at <a href="https://macmac.ch">macmac</a>.</p>
+          <p>Open to new opportunities and freelance projects. Feel free to drop me an <a href="mailto:thomas.miller147@gmail.com">email</a>.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -127,6 +129,10 @@ export default {
   transition: opacity 0.2s ease-out;
   &.loading {
     opacity: 0;
+  }
+  .desc a {
+    color: $darkblue;
+    border-bottom: 1px dotted $darkblue;
   }
 }
 .under-wrap {
