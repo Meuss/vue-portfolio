@@ -117,4 +117,9 @@ footer {
 .fade-leave-active {
   opacity: 0;
 }
+@media (max-width: 700px) {
+  footer {
+    display: none !important;
+  }
+}
 </style>
