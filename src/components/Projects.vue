@@ -73,8 +73,28 @@
       <h1>Sandbox Projects</h1>
       <p>
         A small collection of projects for learning purposes over the years:
-        <router-link to="/sandbox">Sandbox&nbsp;projects</router-link>
+        <router-link to="/sandbox">sandbox&nbsp;projects</router-link>
       </p>
+    </div>
+    <div class="others">
+      <h3>Other client websites</h3>
+      <ul>
+        <li><a href="http://www.neuenschwanderag.com" target="blank">neuenschwanderag.com</a></li>
+        <li><a href="http://dietschweiler-stiftung.testrange.net/" target="blank">dietschweiler-stiftung.ch</a></li>
+        <li><a href="https://schwery.com/" target="blank">schwery.com</a></li>
+        <li><a href="https://daylaw.ch/" target="blank">daylaw.ch</a></li>
+        <li><a href="http://yuma.ch/" target="blank">yuma.ch</a></li>
+        <li><a href="https://bern-bubenberg.ch/" target="blank">bern-bubenberg.ch</a></li>
+        <li><a href="http://aspr-svg.ch" target="blank">aspr-svg.ch</a></li>
+        <li><a href="http://polio.ch" target="blank">polio.ch</a></li>
+        <li><a href="https://cci-media.ch/" target="blank">cci-media.ch</a></li>
+        <li><a href="http://prof-in-courtepin.ch/" target="blank">prof-in-courtepin.ch</a></li>
+        <li><a href="http://day-medical.com/" target="blank">day-medical.com</a></li>
+        <li><a href="https://prosaj.ch/" target="blank">prosaj.ch</a></li>
+        <li><a href="https://sdgdm.ch/" target="blank">sdgdm.ch</a></li>
+        <li><a href="http://www.institut-police.ch/" target="blank">institut-police.ch</a></li>
+        <li><a href="https://tfo.ch/" target="blank">tfo.ch</a></li>
+      </ul>
     </div>
     <footer>
       <p>© {{ new Date().getFullYear() }} Thomas Miller</p>
@@ -486,10 +506,21 @@ export default {
   }
 }
 .sandbox-links {
+  margin-bottom: 80px;
   a {
     border-bottom: 1px dotted $darkblue;
     color: $darkblue;
     @include font-bold;
+  }
+}
+.others {
+  li {
+    margin-bottom: 5px;
+  }
+  a {
+    border-bottom: 1px dotted $darkblue;
+    color: $darkblue;
+    // @include font-bold;
   }
 }
 </style>

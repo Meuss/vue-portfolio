@@ -129,6 +129,13 @@ h2 {
   line-height: 45px;
   margin-bottom: 30px;
 }
+h3 {
+  @include font-regular;
+  letter-spacing: -1px;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
 p {
   margin-bottom: 10px;
 }
