@@ -3,6 +3,7 @@ html, body {
 }
 body {
   overflow: hidden;
+  position: relative;
   margin: 0;
   display: flex;
   flex-direction: columns;
@@ -11,4 +12,26 @@ body {
 }
 #myCanvas {
   background-color: #FDFFFC;
+}
+.github {
+  padding: 10px 0px;
+  bottom: -40px;
+  right: -60px;
+  position: absolute;
+  background: black;
+  color: black;
+  box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+  transition: .15s ease-out;
+  display: flex;
+  justify-content: center;
+}
+.github svg {
+  transform: rotate(45deg);
+  fill: white;
+  height: 25px;
 }

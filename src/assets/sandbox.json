@@ -30,6 +30,21 @@
     "img": "/static/sandbox-img/degustation-vin.jpg"
   },
   {
+    "name": "Vue js Minesweeper",
+    "url": "https://meuss.github.io/minesweeper/index.html",
+    "img": "/static/sandbox-img/minesweeper.jpg"
+  },
+  {
+    "name": "Snake game with JS",
+    "url": "https://codepen.io/Meuss/pen/OOWdZv",
+    "img": "/static/sandbox-img/snake.jpg"
+  },
+  {
+    "name": "Memory with Vue js",
+    "url": "/static/sb/swiss-memory-game/index.html",
+    "img": "/static/sandbox-img/swiss-memory.jpg"
+  },
+  {
     "name": "JS Drum kit",
     "url": "/static/sb/js-drum-kit/index.html",
     "img": "/static/sandbox-img/drums.jpg"
@@ -75,28 +90,8 @@
     "img": "/static/sandbox-img/bigcow.jpg"
   },
   {
-    "name": "Image Splitter",
-    "url": "/static/sb/image-splitter/index.html",
-    "img": "/static/sandbox-img/image-splitter.jpg"
-  },
-  {
     "name": "Whack-a-pawl",
     "url": "/static/sb/whack-a-pawl/index.html",
     "img": "/static/sandbox-img/whack-a-pawl.jpg"
-  },
-  {
-    "name": "Vue js Minesweeper",
-    "url": "https://meuss.github.io/minesweeper/index.html",
-    "img": "/static/sandbox-img/minesweeper.jpg"
-  },
-  {
-    "name": "Snake game with JS",
-    "url": "https://codepen.io/Meuss/pen/OOWdZv",
-    "img": "/static/sandbox-img/snake.jpg"
-  },
-  {
-    "name": "Memory with Vue js",
-    "url": "/static/sb/swiss-memory-game/index.html",
-    "img": "/static/sandbox-img/swiss-memory.jpg"
   }
 ]
