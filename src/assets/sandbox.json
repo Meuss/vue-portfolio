@@ -20,14 +20,19 @@
     "img": "/static/sandbox-img/particles.jpg"
   },
   {
+    "name": "Vue / Firebase Chat",
+    "url": "https://vue-real-time-chat-28d95.firebaseapp.com/",
+    "img": "/static/sandbox-img/chat.jpg"
+  },
+  {
+    "name": "Soirée Dégustation",
+    "url": "http://degustation-vin.ch/",
+    "img": "/static/sandbox-img/degustation-vin.jpg"
+  },
+  {
     "name": "JS Drum kit",
     "url": "/static/sb/js-drum-kit/index.html",
     "img": "/static/sandbox-img/drums.jpg"
-  },
-  {
-    "name": "Swiss summoners",
-    "url": "http://swiss-summoners.ch",
-    "img": "/static/sandbox-img/swiss.jpg"
   },
   {
     "name": "Split Slideshow",
@@ -70,11 +75,6 @@
     "img": "/static/sandbox-img/bigcow.jpg"
   },
   {
-    "name": "Ajax to imdb",
-    "url": "/static/sb/tvshows/index.html",
-    "img": "/static/sandbox-img/tvshows.jpg"
-  },
-  {
     "name": "Image Splitter",
     "url": "/static/sb/image-splitter/index.html",
     "img": "/static/sandbox-img/image-splitter.jpg"
@@ -96,7 +96,7 @@
   },
   {
     "name": "Memory with Vue js",
-    "url": "/static/sb/memory_game/index.html",
+    "url": "/static/sb/swiss-memory-game/index.html",
     "img": "/static/sandbox-img/swiss-memory.jpg"
   }
 ]

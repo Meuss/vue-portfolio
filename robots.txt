@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /projects
-Disallow: /sandbox
-Disallow: /resources
-Disallow: /skills

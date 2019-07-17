@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /sandbox
+
+Sitemap: https://thomasmiller.ch/sitemap.xml

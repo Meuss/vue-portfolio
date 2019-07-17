@@ -3,8 +3,7 @@ import Router from 'vue-router';
 import Home from '@/components/Home';
 import Projects from '@/components/Projects';
 import Sandbox from '@/components/Sandbox';
-import Resources from '@/components/Resources';
-import Skills from '@/components/Skills';
+// import Resources from '@/components/Resources';
 import Page404 from '@/components/Page404';
 
 Vue.use(Router);
@@ -27,19 +26,12 @@ export default new Router({
       component: Sandbox,
     },
     {
-      path: '/resources',
-      name: 'Resources',
-      component: Resources,
-    },
-    {
-      path: '/skills',
-      name: 'Skillss',
-      component: Skills,
-    },
-    {
       path: '*',
       component: Page404,
     },
   ],
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
   mode: 'history',
 });

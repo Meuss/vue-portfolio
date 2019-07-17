@@ -101,6 +101,10 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include sm {
+    margin-left: 0;
+    width: 165px;
+  }
 }
 a {
   display: flex;
@@ -119,6 +123,13 @@ a {
   }
   &:hover {
     background-color: $blue;
+  }
+  @include sm {
+    padding: 8px;
+    background-color: $darkblue;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
   }
 }
 </style>

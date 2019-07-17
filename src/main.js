@@ -1,11 +1,9 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
-import VueYoutube from 'vue-youtube';
+import VTooltip from 'v-tooltip';
 import App from './App';
 import router from './router';
 
-Vue.use(VueYoutube);
+Vue.use(VTooltip);
 
 Vue.config.productionTip = false;
 

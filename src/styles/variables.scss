@@ -40,3 +40,29 @@ $black: #333;
   font-weight: normal;
   font-style: normal;
 }
+
+@mixin lg() {
+  @media (min-width: 1201px) {
+    @content;
+  }
+}
+@mixin md() {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin md1() {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin sm() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin xs() {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

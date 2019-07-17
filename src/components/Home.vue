@@ -11,18 +11,21 @@
         <div class="under-wrap">
           <socials></socials>
           <div class="cvs">
-            CV (.pdf)
-            <a href="/static/CV_Thomas_Miller_EN_2019.pdf" target="_blank">English</a>
-            <a href="/static/CV_Thomas_Miller_FR_2019.pdf" target="_blank">Français</a>
+            <strong>CV</strong>
+            <a href="/static/CV_Thomas_Miller_EN.pdf" target="_blank">English</a>
+            <a href="/static/CV_Thomas_Miller_FR.pdf" target="_blank">Français</a>
           </div>
         </div>
         <div class="line"></div>
         <div class="desc">
-          <p>Frontend web developer from Bulle, Switzerland.</p>
-          <p>Currently creating awesome stuff at <a href="https://macmac.ch">macmac</a>.</p>
-          <p>Open to new opportunities and freelance projects. Feel free to drop me an <a href="mailto:thomas.miller147@gmail.com">email</a>.</p>
+          <p>Passionate front-end web developer from Bulle, Switzerland</p>
+          <p><strong>Currently looking for a new front-end web developer position.</strong></p>
+          <p>Take a look at my <router-link to="/projects">portfolio</router-link>.</p>
         </div>
       </div>
+      <footer>
+        <p>© {{ new Date().getFullYear() }} Thomas Miller</p>
+      </footer>
     </div>
   </div>
 </template>
@@ -91,6 +94,11 @@ export default {
   height: 100%;
   display: flex;
   position: relative;
+  footer {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
 }
 .image {
   height: 100vh;
@@ -138,7 +146,7 @@ export default {
 .under-wrap {
   display: flex;
   justify-content: space-between;
-  @media (max-width: 800px) {
+  @include sm {
     flex-direction: column;
     .cvs {
       margin-top: 15px;
@@ -146,13 +154,14 @@ export default {
   }
   .cvs {
     display: flex;
-    align-items: center;
-    @media (max-width: 700px) {
+    align-items: flex-end;
+    @include sm {
       justify-content: center;
     }
     a {
       color: $darkblue;
       border-bottom: 1px dotted $darkblue;
+      margin-bottom: -1px;
       &:first-of-type {
         margin-right: 10px;
         margin-left: 10px;
@@ -165,40 +174,41 @@ export default {
   background-color: $darkblue;
   margin: 15px 0px;
 }
-@media (max-width: 1100px) {
+@include md {
   .image {
-    width: 40%;
+    min-width: 40%;
   }
   .tm {
     transform: translateX(-100px);
   }
 }
-@media (max-width: 700px) {
+@include sm {
   .homepage {
     flex-direction: column;
   }
   .homepage-content {
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
   }
   .tm {
-    transform: translateX(0px);
+    transform: translateY(-50px);
+    color: $lightgray;
     margin-bottom: 10px;
-    text-align: center;
     h1 {
       font-size: 30px;
       line-height: 34px;
-      padding: 2px 5px 0px 5px;
+      padding: 2px 2px 0px 0px;
+    }
+    & > div {
+      display: none;
     }
   }
   .image {
     width: 100%;
-    height: 300px;
+    height: 50vh;
   }
   html,
   body,
   #app {
-    // height: 100vh;
-    // width: 100vw;
     overflow: hidden;
   }
   .socials {
@@ -207,12 +217,9 @@ export default {
   .under {
     font-size: 16px;
     line-height: 18px;
-    text-align: center;
   }
-}
-@media (min-width: 701px) {
-  .building {
-    display: none;
+  .under-wrap .cvs {
+    justify-content: flex-start;
   }
 }
 </style>
