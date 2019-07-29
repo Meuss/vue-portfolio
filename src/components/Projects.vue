@@ -1,7 +1,8 @@
 <template>
   <div class="projects loading">
     <h1>{{ title }}</h1>
-    <p>A sample of some of my favorite clients projects that I've built over the years.</p>
+    <!-- <p>A sample of some of my favorite projects that I've developed .</p> -->
+    <p>Most of these projects were developed while I was working at <a class="macmac-link" href="https://macmac.ch" target="_blank">macmac</a>.</p>
     <ul class="wrapper">
       <li v-for="(project, index) in projects" :class="project.shortname" :key="index">
         <a :href="project.url" target="_blank">
@@ -77,10 +78,10 @@
       </p>
     </div>
     <div class="others">
-      <h3>Other client websites</h3>
+      <h3>Other noteworthy websites</h3>
       <ul>
         <li><a href="http://www.neuenschwanderag.com" target="blank">neuenschwanderag.com</a></li>
-        <li><a href="http://dietschweiler-stiftung.testrange.net/" target="blank">dietschweiler-stiftung.ch</a></li>
+        <!-- <li><a href="http://dietschweiler-stiftung.testrange.net/" target="blank">dietschweiler-stiftung.ch</a></li> -->
         <li><a href="https://schwery.com/" target="blank">schwery.com</a></li>
         <li><a href="https://daylaw.ch/" target="blank">daylaw.ch</a></li>
         <li><a href="http://yuma.ch/" target="blank">yuma.ch</a></li>
@@ -130,6 +131,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '~@/styles/variables.scss';
+.macmac-link {
+  border-bottom: 1px dotted $darkblue;
+  color: $darkblue;
+  @include font-bold;
+}
 .wrapper {
   display: grid;
   margin-bottom: 80px;
