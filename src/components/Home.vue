@@ -20,8 +20,9 @@
         <div class="desc">
           <p>Passionate front-end web developer from Bulle, Switzerland</p>
           <p>
-            Currently working at <a href="https://digital.cdi.ch" target="_blank">CDI digital experiences</a>, previously at <a href="https://macmac.ch" target="_blank">macmac</a>.
+            Currently working at <a href="https://digital.cdi.ch" target="_blank">CDI digital experiences</a>, previously at <a href="https://macmac.ch" target="_blank">macmac</a>
           </p>
+          <p>Open to freelance projects or part-time contract work.</p>
           <p>Take a look at my <router-link to="/projects">portfolio</router-link>.</p>
         </div>
       </div>

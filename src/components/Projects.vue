@@ -80,8 +80,9 @@
     <div class="others">
       <h3>Other noteworthy websites</h3>
       <ul>
+        <li><a href="https://dietschweiler-stiftung.ch/" target="blank">dietschweiler-stiftung.ch</a></li>
         <li><a href="http://www.neuenschwanderag.com" target="blank">neuenschwanderag.com</a></li>
-        <!-- <li><a href="http://dietschweiler-stiftung.testrange.net/" target="blank">dietschweiler-stiftung.ch</a></li> -->
+        <li><a href="https://thomas-hefti.ch/" target="blank">thomas-hefti.ch</a></li>
         <li><a href="https://schwery.com/" target="blank">schwery.com</a></li>
         <li><a href="https://daylaw.ch/" target="blank">daylaw.ch</a></li>
         <li><a href="http://yuma.ch/" target="blank">yuma.ch</a></li>
