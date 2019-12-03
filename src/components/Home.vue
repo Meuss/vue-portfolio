@@ -11,18 +11,16 @@
         <div class="under-wrap">
           <socials></socials>
           <div class="cvs">
-            <strong>CV</strong>
-            <a href="/static/CV_Thomas_Miller_EN.pdf" target="_blank">English</a>
-            <a href="/static/CV_Thomas_Miller_FR.pdf" target="_blank">Français</a>
+            <strong>CV [.pdf] :</strong>
+            <a href="/static/CV_Thomas_Miller_EN-12-2019.pdf" target="_blank">English</a>
+            <a href="/static/CV_Thomas_Miller_FR-12-2019.pdf" target="_blank">Français</a>
           </div>
         </div>
         <div class="line"></div>
         <div class="desc">
           <p>Passionate front-end web developer from Bulle, Switzerland</p>
-          <p>
-            Currently working at <a href="https://digital.cdi.ch" target="_blank">CDI digital experiences</a>, previously at <a href="https://macmac.ch" target="_blank">macmac</a>
-          </p>
-          <p>Open to freelance projects or part-time contract work.</p>
+          <p><strong>Currently looking for a new job opportunity.</strong></p>
+          <p>Open to freelance projects or part-time contract work as well.</p>
           <p>Take a look at my <router-link to="/projects">portfolio</router-link>.</p>
         </div>
       </div>

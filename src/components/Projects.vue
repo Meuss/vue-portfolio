@@ -78,23 +78,21 @@
       </p>
     </div>
     <div class="others">
-      <h3>Other noteworthy websites</h3>
+      <h1>Other noteworthy websites</h1>
       <ul>
         <li><a href="https://dietschweiler-stiftung.ch/" target="blank">dietschweiler-stiftung.ch</a></li>
         <li><a href="http://www.neuenschwanderag.com" target="blank">neuenschwanderag.com</a></li>
-        <li><a href="https://thomas-hefti.ch/" target="blank">thomas-hefti.ch</a></li>
         <li><a href="https://schwery.com/" target="blank">schwery.com</a></li>
+        <li><a href="https://thomas-hefti.ch/" target="blank">thomas-hefti.ch</a></li>
         <li><a href="https://daylaw.ch/" target="blank">daylaw.ch</a></li>
         <li><a href="http://yuma.ch/" target="blank">yuma.ch</a></li>
         <li><a href="https://bern-bubenberg.ch/" target="blank">bern-bubenberg.ch</a></li>
+        <li><a href="https://cci-media.ch/" target="blank">cci-media.ch</a></li>
         <li><a href="http://aspr-svg.ch" target="blank">aspr-svg.ch</a></li>
         <li><a href="http://polio.ch" target="blank">polio.ch</a></li>
-        <li><a href="https://cci-media.ch/" target="blank">cci-media.ch</a></li>
         <li><a href="http://prof-in-courtepin.ch/" target="blank">prof-in-courtepin.ch</a></li>
-        <li><a href="http://day-medical.com/" target="blank">day-medical.com</a></li>
         <li><a href="https://prosaj.ch/" target="blank">prosaj.ch</a></li>
         <li><a href="https://sdgdm.ch/" target="blank">sdgdm.ch</a></li>
-        <li><a href="http://www.institut-police.ch/" target="blank">institut-police.ch</a></li>
         <li><a href="https://tfo.ch/" target="blank">tfo.ch</a></li>
       </ul>
     </div>

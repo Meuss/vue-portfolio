@@ -21,8 +21,8 @@
       back to Portfolio
     </router-link>
     <h1>{{ title }}</h1>
-    <p><strong>Some small projects I've made over the years, for learning purposes only.</strong></p>
-    <p>Some are old or ugly, probably break in some browsers and few are adapted for mobile.</p>
+    <p>Small projects I've made over the years, <strong>for learning/fun purposes only.</strong></p>
+    <p>Some are old or ugly, probably break in some browsers and few are adapted for mobile. I'm sorry.</p>
     <ul class="sandboxes">
       <li v-for="(sandbox, index) in sandboxes" :key="index">
         <a :href="sandbox.url" target="_blank">
