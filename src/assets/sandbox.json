@@ -30,6 +30,11 @@
     "img": "/static/sandbox-img/degustation-vin.jpg"
   },
   {
+    "name": "Vue Hangman game",
+    "url": "/static/sb/vue-hangman/index.html",
+    "img": "/static/sandbox-img/vue-hangman.jpg"
+  },
+  {
     "name": "Vue js Minesweeper",
     "url": "https://meuss.github.io/minesweeper/index.html",
     "img": "/static/sandbox-img/minesweeper.jpg"

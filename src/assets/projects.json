@@ -122,13 +122,13 @@
     "img": "/static/project-img/bimbosan.jpg"
   },
   {
-    "name": "100% Orange",
-    "shortname": "orange",
-    "year": "2018",
-    "viewurl": "100orange.ch",
-    "url": "https://100orange.ch",
-    "tech": ["html", "css"],
-    "img": "/static/project-img/orange.jpg"
+    "name": "Gestion de fortune",
+    "shortname": "gestion",
+    "year": "2020",
+    "viewurl": "gestion-de-fortune.ch",
+    "url": "https://gestion-de-fortune.ch",
+    "tech": ["wordpress", "css", "javascript"],
+    "img": "/static/project-img/gestion.jpg"
   },
   {
     "name": "CCI-Cotting",
@@ -194,15 +194,6 @@
     "url": "https://stories.prison.ch/fr/gestion-de-la-transition/",
     "tech": ["wordpress", "sass"],
     "img": "/static/project-img/transition.jpg"
-  },
-  {
-    "name": "Matuzon",
-    "shortname": "matuzon",
-    "year": "2016",
-    "viewurl": "matuzon.ch",
-    "url": "http://matuzon.ch/",
-    "tech": ["html", "css"],
-    "img": "/static/project-img/matuzon.jpg"
   },
   {
     "name": "Vulnérabilités en détention",

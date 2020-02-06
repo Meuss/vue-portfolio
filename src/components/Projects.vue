@@ -85,6 +85,7 @@
         <li><a href="https://schwery.com/" target="blank">schwery.com</a></li>
         <li><a href="https://thomas-hefti.ch/" target="blank">thomas-hefti.ch</a></li>
         <li><a href="https://daylaw.ch/" target="blank">daylaw.ch</a></li>
+        <li><a href="https://matuzon.ch/" target="blank">matuzon.ch</a></li>
         <li><a href="http://yuma.ch/" target="blank">yuma.ch</a></li>
         <li><a href="https://bern-bubenberg.ch/" target="blank">bern-bubenberg.ch</a></li>
         <li><a href="https://cci-media.ch/" target="blank">cci-media.ch</a></li>
@@ -189,7 +190,7 @@ export default {
       }
       &.cci {
         grid-row: span 2;
-        grid-column: 4 / 5;
+        grid-column: 5 / 6;
       }
       &.hertigfleurs {
         grid-row: 6 / span 2;
@@ -200,7 +201,8 @@ export default {
           background-position: left top;
         }
       }
-      &.vulnerabilites {
+      &.vulnerabilites,
+      &.gestion {
         grid-column: span 2;
       }
       &.aas {
@@ -224,7 +226,8 @@ export default {
       &.adler,
       &.bimbosan,
       &.aas,
-      &.vulnerabilites {
+      &.vulnerabilites,
+      &.gestion {
         grid-column: span 2;
       }
       // high
@@ -248,11 +251,14 @@ export default {
         grid-row: 6 / 7;
         grid-column: 1 / 2;
       }
-      &.sms {
-        grid-row: 9 / 10;
-        grid-column: 1 / 2;
+      &.aeberhard {
+        grid-column: 2 / 4;
+        grid-row: 8 / 10;
       }
-      &.matuzon {
+      &.nydegger {
+        grid-column: 4 / 5;
+      }
+      &.sms {
         grid-row: 9 / 10;
         grid-column: 4 / 5;
       }
@@ -278,7 +284,8 @@ export default {
       &.adler,
       &.bimbosan,
       &.aas,
-      &.vulnerabilites {
+      &.vulnerabilites,
+      &.gestion {
         grid-column: span 2;
       }
       // high
@@ -292,6 +299,10 @@ export default {
       &.probation {
         grid-row-start: 6;
         grid-column-start: 2;
+      }
+      &.sms {
+        grid-column-start: 2;
+        grid-row-start: 16;
       }
     }
   }
@@ -318,7 +329,8 @@ export default {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 80vw;
     li {
-      &.vulnerabilites {
+      &.vulnerabilites,
+      &.gestion {
         .image-wrapper {
           background-position: left top;
         }
