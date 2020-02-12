@@ -41,6 +41,7 @@
 
 <script>
 import 'normalize.css';
+import { store } from './store/store';
 
 export default {
   name: 'app',
@@ -69,6 +70,9 @@ export default {
     $route() {
       this.menuOpen = false;
     },
+  },
+  created() {
+    store.commit('setPixelRatio', window.devicePixelRatio);
   },
   mounted() {
     /* eslint-disable */

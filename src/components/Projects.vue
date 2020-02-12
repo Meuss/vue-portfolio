@@ -19,7 +19,7 @@
               </g>
             </svg>
           </div>
-          <div class="image-wrapper" :style="{ backgroundImage: 'url(' + project.img + ')' }" :class="{ 'is-favorite': project.favorite }"></div>
+          <div class="image-wrapper" :data-img="project.img" :class="{ 'is-favorite': project.favorite }"></div>
           <div v-if="project.favorite" class="favorite"></div>
           <svg
             v-if="project.favorite"
@@ -105,8 +105,8 @@
 
 <script>
 /* eslint-disable */
-// import anime from 'animejs';
 import projects from '../assets/projects.json';
+import { store } from '../store/store';
 /* eslint-enable */
 
 export default {
@@ -121,10 +121,50 @@ export default {
     callback: () => {
       // do work here
     },
+    calculateImgSizes() {
+      // load the appropriate images from cloudinary
+      /* eslint-disable-next-line */
+      Array.from(document.querySelectorAll('ul.wrapper li a .image-wrapper[data-img]')).forEach(image => {
+        const desiredSize = Math.ceil(image.parentElement.clientWidth);
+        // only get from a subset of images (because of cloudinary transforms limit)
+        const sizes = [200, 300, 500, 800, 1080, 1600];
+        const result = sizes.filter(number => number > desiredSize);
+        const imageSize = `w_${this.closestNumber(result, desiredSize)}`;
+        let extraParams = '';
+        if (store.state.pixelRatio === 1) {
+          extraParams = ',f_auto';
+        } else {
+          extraParams = ',f_auto,dpr_2';
+        }
+        const url = `${this.baseUrl}${imageSize}${extraParams}/vue-portfolio/projects/${image.dataset.img}`;
+        /* eslint-disable-next-line */
+        image.style.backgroundImage = `url(${url})`;
+      });
+    },
+    /* eslint-disable-next-line */
+    closestNumber: function(array, num) {
+      let i = 0;
+      let minDiff = 1000;
+      let ans;
+      /* eslint-disable-next-line */
+      for (i in array) {
+        const m = Math.abs(num - array[i]);
+        if (m < minDiff) {
+          minDiff = m;
+          ans = array[i];
+        }
+      }
+      return ans;
+    },
   },
   mounted() {
     this.callback();
-    // console.log('mounted');
+    this.calculateImgSizes();
+  },
+  computed: {
+    baseUrl() {
+      return store.state.baseUrl;
+    },
   },
 };
 </script>
