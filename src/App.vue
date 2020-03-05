@@ -204,7 +204,8 @@ footer {
   height: 90%;
   pointer-events: none;
   opacity: 0;
-  background-color: $blue !important;
+  // background-color: $blue !important;
+  background-image: linear-gradient(to right, #8ca5c9, #405a82);
 }
 .block-revealer__content {
   background-color: transparent;

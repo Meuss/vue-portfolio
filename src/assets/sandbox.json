@@ -1,5 +1,10 @@
 [
   {
+    "name": "COVID-19 Contagion",
+    "url": "https://contagion.ch",
+    "img": "/static/sandbox-img/contagion.jpg"
+  },
+  {
     "name": "Canvas Circular",
     "url": "/static/sb/canvas-circular/index.html",
     "img": "/static/sandbox-img/circular.jpg"

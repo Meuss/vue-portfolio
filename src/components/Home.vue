@@ -104,7 +104,7 @@ export default {
 .image {
   height: 100vh;
   width: calc(100% / 3);
-  background-image: url('/static/me_popart.jpg');
+  background-image: url('/static/linkedin.jpg');
   background-size: cover;
   background-position: center center;
 }
@@ -112,7 +112,7 @@ export default {
   padding: 35vh 60px 60px 60px;
 }
 .tm {
-  transform: translateX(-8vw);
+  transform: translateX(-20px);
   color: $darkblue;
   @include font-bold;
   position: relative;
@@ -180,7 +180,7 @@ export default {
     min-width: 40%;
   }
   .tm {
-    transform: translateX(-100px);
+    // transform: translateX(-100px);
   }
 }
 @include sm {
@@ -205,7 +205,7 @@ export default {
   }
   .image {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
   }
   html,
   body,
