@@ -179,9 +179,6 @@ export default {
   .image {
     min-width: 40%;
   }
-  .tm {
-    // transform: translateX(-100px);
-  }
 }
 @include sm {
   .homepage {

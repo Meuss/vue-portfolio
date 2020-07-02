@@ -24,7 +24,7 @@
     "shortname": "tsantsa",
     "year": "2017",
     "viewurl": "tsantsa.ch",
-    "url": "http://tsantsa.ch/en",
+    "url": "https://archive.tsantsa.ch/en",
     "tech": ["kirby", "php", "sass"],
     "img": "tsantsa.jpg"
   },
