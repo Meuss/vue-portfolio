@@ -23,8 +23,7 @@
       id="popper_bcnrsnclcc"
       aria-hidden="true"
       class="v-popper__popper v-popper--theme-tooltip"
-      style="position: absolute; will-change: transform; 
-      top: 0px; left: 0px; transform: translate3d(374px, 562px, 0px);"
+      style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(374px, 562px, 0px);"
       x-placement="top"
     >
       <div class="v-popper__wrapper">
@@ -205,7 +204,9 @@ footer {
   pointer-events: none;
   opacity: 0;
   // background-color: $blue !important;
-  background-image: linear-gradient(to right, #8ca5c9, #405a82);
+  // background-color: #e3862e !important;
+  // background-image: linear-gradient(to right, #f6a456, #e3862e);
+  background-image: linear-gradient(to left, #1e5469, #0a3e52);
 }
 .block-revealer__content {
   background-color: transparent;

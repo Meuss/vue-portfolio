@@ -1,5 +1,16 @@
 [
   {
+    "name": "Familizy",
+    "shortname": "familizy",
+    "url": "https://familizy.ch",
+    "favorite": true,
+    "year": "2020",
+    "viewurl": "familizy.ch",
+    "tech": ["wordpress", "greensock", "javascript", "php"],
+    "img": "familizy.jpg",
+    "size": "big"
+  },
+  {
     "name": "macmac portfolio",
     "shortname": "macmac",
     "url": "https://macmac.ch",
@@ -7,7 +18,8 @@
     "year": "2018",
     "viewurl": "macmac.ch",
     "tech": ["vue", "cloudinary", "greensock", "javascript", "sass"],
-    "img": "macmac.jpg"
+    "img": "macmac.jpg",
+    "size": "big"
   },
   {
     "name": "Hotel & Pub Adler à Morat",
@@ -17,16 +29,19 @@
     "viewurl": "adler-murten.ch",
     "url": "http://adler-murten.ch",
     "tech": ["kirby", "javascript", "php", "sass"],
-    "img": "adler.jpg"
+    "img": "adler.jpg",
+    "size": "wide"
   },
+
   {
-    "name": "Tsantsa",
-    "shortname": "tsantsa",
-    "year": "2017",
-    "viewurl": "tsantsa.ch",
-    "url": "https://archive.tsantsa.ch/en",
-    "tech": ["kirby", "php", "sass"],
-    "img": "tsantsa.jpg"
+    "name": "Professions en exécution des sanctions",
+    "shortname": "professions",
+    "year": "2016",
+    "viewurl": "stories.prison.ch",
+    "url": "https://stories.prison.ch/de/beruf-justizvollzug/",
+    "tech": ["wordpress", "sass"],
+    "img": "professions.jpg",
+    "size": ""
   },
   {
     "name": "Isler & Pedrazzini AG",
@@ -36,44 +51,8 @@
     "viewurl": "islerpedrazzini.ch",
     "url": "https://islerpedrazzini.ch",
     "tech": ["vue", "nuxt", "wordpress", "vuetify", "javascript", "sass"],
-    "img": "islerpedrazzini.jpg"
-  },
-  {
-    "name": "cricprint",
-    "shortname": "cric",
-    "year": "2018",
-    "viewurl": "cricprint.ch",
-    "url": "http://cricprint.ch/fr/",
-    "tech": ["wordpress", "php", "sass"],
-    "img": "cric.jpg"
-  },
-  {
-    "name": "tks architekten",
-    "shortname": "tks",
-    "favorite": true,
-    "year": "2018",
-    "viewurl": "tksarchitekten.ch",
-    "url": "https://tksarchitekten.ch",
-    "tech": ["vue", "wordpress", "greensock", "sass"],
-    "img": "tks.jpg"
-  },
-  {
-    "name": "CORE",
-    "shortname": "core",
-    "year": "2017",
-    "viewurl": "core-partner.ch",
-    "url": "https://core-partner.ch",
-    "tech": ["kirby", "sass"],
-    "img": "core.jpg"
-  },
-  {
-    "name": "Easy Tube",
-    "shortname": "easytube",
-    "year": "2017",
-    "viewurl": "easytube.ch",
-    "url": "http://easytube.ch/",
-    "tech": ["html", "sass"],
-    "img": "easytube2.jpg"
+    "img": "islerpedrazzini.jpg",
+    "size": "big"
   },
   {
     "name": "Atelier d'architecture Seydoux",
@@ -83,7 +62,59 @@
     "favorite": true,
     "url": "https://aas-architecture.ch",
     "tech": ["vue", "wordpress", "greensock", "sass"],
-    "img": "aas.jpg"
+    "img": "aas.jpg",
+    "size": "wide"
+  },
+  {
+    "name": "Tsantsa",
+    "shortname": "tsantsa",
+    "year": "2017",
+    "viewurl": "tsantsa.ch",
+    "url": "https://archive.tsantsa.ch/en",
+    "tech": ["kirby", "php", "sass"],
+    "img": "tsantsa.jpg",
+    "size": ""
+  },
+  {
+    "name": "cricprint",
+    "shortname": "cric",
+    "year": "2018",
+    "viewurl": "cricprint.ch",
+    "url": "http://cricprint.ch/fr/",
+    "tech": ["wordpress", "php", "sass"],
+    "img": "cric.jpg",
+    "size": ""
+  },
+  {
+    "name": "tks architekten",
+    "shortname": "tks",
+    "favorite": true,
+    "year": "2018",
+    "viewurl": "tksarchitekten.ch",
+    "url": "https://tksarchitekten.ch",
+    "tech": ["vue", "wordpress", "greensock", "sass"],
+    "img": "tks.jpg",
+    "size": "big"
+  },
+  {
+    "name": "Easy Tube",
+    "shortname": "easytube",
+    "year": "2017",
+    "viewurl": "easytube.ch",
+    "url": "http://easytube.ch/",
+    "tech": ["html", "sass"],
+    "img": "easytube-3.jpg",
+    "size": "wide"
+  },
+  {
+    "name": "CORE",
+    "shortname": "core",
+    "year": "2017",
+    "viewurl": "core-partner.ch",
+    "url": "https://core-partner.ch",
+    "tech": ["kirby", "sass"],
+    "img": "core.jpg",
+    "size": "big"
   },
   {
     "name": "Probation Works",
@@ -92,7 +123,8 @@
     "viewurl": "stories.prison.ch",
     "url": "https://stories.prison.ch/fr/probation-works-2/introduction/",
     "tech": ["wordpress", "sass", "jquery"],
-    "img": "probationworks.jpg"
+    "img": "probationworks.jpg",
+    "size": "big"
   },
   {
     "name": "Die Kaeserei",
@@ -101,17 +133,10 @@
     "viewurl": "kaeserei-murten.ch",
     "url": "http://kaeserei-murten.ch/fr",
     "tech": ["kirby", "php", "javascript", "sass"],
-    "img": "kaeserei.jpg"
+    "img": "kaeserei.jpg",
+    "size": ""
   },
-  {
-    "name": "Professions en exécution des sanctions",
-    "shortname": "professions",
-    "year": "2016",
-    "viewurl": "stories.prison.ch",
-    "url": "https://stories.prison.ch/de/beruf-justizvollzug/",
-    "tech": ["wordpress", "sass"],
-    "img": "professions.jpg"
-  },
+
   {
     "name": "Bimbosan",
     "shortname": "bimbosan",
@@ -119,7 +144,8 @@
     "viewurl": "bimbosan.ch",
     "url": "http://bimbosan.ch/",
     "tech": ["wordpress", "php", "javascript", "sass"],
-    "img": "bimbosan.jpg"
+    "img": "bimbosan.jpg",
+    "size": "wide"
   },
   {
     "name": "Gestion de fortune",
@@ -128,7 +154,8 @@
     "viewurl": "gestion-de-fortune.ch",
     "url": "https://gestion-de-fortune.ch",
     "tech": ["wordpress", "css", "javascript"],
-    "img": "gestion.jpg"
+    "img": "gestion.jpg",
+    "size": "wide"
   },
   {
     "name": "CCI-Cotting",
@@ -137,7 +164,8 @@
     "viewurl": "cci-cotting.ch",
     "url": "http://cci-cotting.ch/",
     "tech": ["kirby", "php", "javascript", "sass"],
-    "img": "cci.jpg"
+    "img": "cci-2.jpg",
+    "size": "wide"
   },
   {
     "name": "Walter Nydegger",
@@ -146,7 +174,8 @@
     "viewurl": "nydeggerwalter.ch",
     "url": "http://nydeggerwalter.ch/",
     "tech": ["kirby", "sass"],
-    "img": "nydegger.jpg"
+    "img": "nydegger.jpg",
+    "size": ""
   },
   {
     "name": "Metzgerei Aeberhard",
@@ -156,7 +185,8 @@
     "viewurl": "metzgerei-aeberhard.ch",
     "url": "http://metzgerei-aeberhard.ch/",
     "tech": ["kirby", "vue", "php", "sass"],
-    "img": "aeberhard.jpg"
+    "img": "aeberhard.jpg",
+    "size": "big"
   },
   {
     "name": "hertigfleurs",
@@ -166,7 +196,8 @@
     "viewurl": "hertigfleurs.ch",
     "url": "https://hertigfleurs.ch/",
     "tech": ["shopify", "sass"],
-    "img": "hertigfleurs.jpg"
+    "img": "hertigfleurs.jpg",
+    "size": "big"
   },
   {
     "name": "The Singlemalt shop",
@@ -175,7 +206,8 @@
     "viewurl": "singlemalt-shop.ch",
     "url": "http://singlemalt-shop.ch/",
     "tech": ["wordpress", "woocommerce", "php", "sass", "jquery"],
-    "img": "sms.jpg"
+    "img": "sms.jpg",
+    "size": "big"
   },
   {
     "name": "Whiskytrain",
@@ -184,7 +216,8 @@
     "viewurl": "whiskytrain.ch",
     "url": "http://whiskytrain.ch/",
     "tech": ["wordpress", "woocommerce", "sass"],
-    "img": "whiskytrain.jpg"
+    "img": "whiskytrain.jpg",
+    "size": ""
   },
   {
     "name": "Gestion de la transition",
@@ -193,7 +226,8 @@
     "viewurl": "stories.prison.ch",
     "url": "https://stories.prison.ch/fr/gestion-de-la-transition/",
     "tech": ["wordpress", "sass"],
-    "img": "transition.jpg"
+    "img": "transition.jpg",
+    "size": ""
   },
   {
     "name": "Vulnérabilités en détention",
@@ -202,6 +236,7 @@
     "viewurl": "stories.prison.ch",
     "url": "https://stories.prison.ch/fr/vulnerabilites-en-detention/",
     "tech": ["wordpress", "sass"],
-    "img": "vulnerabilites.jpg"
+    "img": "vulnerabilites.jpg",
+    "size": "wide"
   }
 ]

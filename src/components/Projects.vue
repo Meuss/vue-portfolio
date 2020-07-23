@@ -1,10 +1,9 @@
 <template>
   <div class="projects loading">
     <h1>{{ title }}</h1>
-    <!-- <p>A sample of some of my favorite projects that I've developed .</p> -->
-    <p>Most of these projects were developed while I was working at <a class="macmac-link" href="https://macmac.ch" target="_blank">macmac</a>.</p>
+    <p>Most of these projects were developed while I was working or freelancing for <a class="macmac-link" href="https://macmac.ch" target="_blank">macmac</a>.</p>
     <ul class="wrapper">
-      <li v-for="(project, index) in projects" :class="project.shortname" :key="index">
+      <li v-for="(project, index) in projects" :class="[project.shortname, project.size]" :key="index">
         <a :href="project.url" target="_blank">
           <div class="screen">
             <svg viewBox="0 0 71 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -30,7 +29,7 @@
             x="0px"
             y="0px"
             viewBox="0 0 53.867 53.867"
-            style="enable-background:new 0 0 53.867 53.867;"
+            style="enable-background: new 0 0 53.867 53.867;"
             xml:space="preserve"
           >
             <polygon
@@ -124,11 +123,12 @@ export default {
     calculateImgSizes() {
       // load the appropriate images from cloudinary
       /* eslint-disable-next-line */
-      Array.from(document.querySelectorAll('ul.wrapper li a .image-wrapper[data-img]')).forEach(image => {
+      Array.from(document.querySelectorAll('ul.wrapper li a .image-wrapper[data-img]')).forEach((image) => {
         const desiredSize = Math.ceil(image.parentElement.clientWidth);
         // only get from a subset of images (because of cloudinary transforms limit)
         const sizes = [200, 300, 500, 800, 1080, 1600];
-        const result = sizes.filter(number => number > desiredSize);
+        /* eslint-disable-next-line */
+        const result = sizes.filter((number) => number > desiredSize);
         const imageSize = `w_${this.closestNumber(result, desiredSize)}`;
         let extraParams = '';
         if (store.state.pixelRatio === 1) {
@@ -142,7 +142,7 @@ export default {
       });
     },
     /* eslint-disable-next-line */
-    closestNumber: function(array, num) {
+    closestNumber: function (array, num) {
       let i = 0;
       let minDiff = 1000;
       let ans;
@@ -179,172 +179,63 @@ export default {
 .wrapper {
   display: grid;
   margin-bottom: 80px;
-  grid-auto-rows: 228px;
+  grid-auto-rows: 200px;
   grid-gap: 30px;
+  grid-template-columns: repeat(6, 1fr);
   li {
     position: relative;
     background: lighten(#f8f8f8, 3%);
-  }
-  @include lg {
-    grid-template-columns: repeat(5, 1fr);
-    li {
-      &.isler {
-        grid-column: 3/5;
-        grid-row: 2/4;
+    grid-column: span 2;
+    grid-row: span 2;
+    &.wide {
+      grid-row: span 1;
+    }
+    // bg img positions
+    &.adler {
+      .image-wrapper {
+        background-position: center center;
       }
-      &.macmac {
-        grid-column: 1/3;
-        grid-row: 1/3;
+    }
+    &.sms {
+      .image-wrapper {
+        background-position: center center;
       }
-      &.probation {
-        grid-row: span 2;
-        grid-column: span 2;
-      }
-      &.adler {
-        grid-column: 3/5;
-        grid-row: 1/2;
-        .image-wrapper {
-          background-position: center center;
-        }
-      }
-      &.easytube {
-        grid-row: span 2;
-      }
-      &.tks {
-        grid-row: span 2;
-        grid-column: span 2;
-      }
-      &.bimbosan {
-        grid-column: span 2;
-      }
-      &.aeberhard {
-        grid-column: 4/6;
-        grid-row: 4/6;
-      }
-      &.sms {
-        grid-row: span 2;
-        grid-column: span 2;
-        .image-wrapper {
-          background-position: center center;
-        }
-      }
-      &.cci {
-        grid-row: span 2;
-        grid-column: 5 / 6;
-      }
-      &.hertigfleurs {
-        grid-row: 6 / span 2;
-        grid-column: 4 / span 2;
-      }
-      &.nydegger {
-        .image-wrapper {
-          background-position: left top;
-        }
-      }
-      &.vulnerabilites,
-      &.gestion {
-        grid-column: span 2;
-      }
-      &.aas {
-        grid-column: span 2;
+    }
+    &.nydegger {
+      .image-wrapper {
+        background-position: left top;
       }
     }
   }
-  @media (min-width: 769px) and (max-width: 1200px) {
-    grid-auto-rows: 250px;
+  @include md {
     grid-template-columns: repeat(4, 1fr);
-    li {
-      // wide & long
-      &.macmac,
-      &.tks,
-      &.aeberhard,
-      &.hertigfleurs {
-        grid-row: span 2;
-        grid-column: span 2;
-      }
-      // wide
-      &.adler,
-      &.bimbosan,
-      &.aas,
-      &.vulnerabilites,
-      &.gestion {
-        grid-column: span 2;
-      }
-      // high
-      &.easytube,
-      &.cci {
-        grid-row: span 2;
-      }
-      // position fixes
-      &.isler {
-        grid-column: 3 / 5;
-        grid-row: 2 / 4;
-      }
-      &.probation {
-        grid-column: 3 / 4;
-        grid-row: 5 / 6;
-      }
-      &.aas {
-        grid-column: 2 / 4;
-      }
-      &.kaeserei {
-        grid-row: 6 / 7;
-        grid-column: 1 / 2;
-      }
-      &.aeberhard {
-        grid-column: 2 / 4;
-        grid-row: 8 / 10;
-      }
-      &.nydegger {
-        grid-column: 4 / 5;
-      }
-      &.sms {
-        grid-row: 9 / 10;
-        grid-column: 4 / 5;
-      }
-    }
+    grid-auto-rows: 250px;
+    grid-gap: 40px;
   }
   @include md1 {
-    grid-auto-rows: 20vw;
+    grid-auto-rows: 200px;
+    grid-gap: 30px;
   }
-  @media (max-width: 768px) and (min-width: 481px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 50vw;
+  @include sm {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 120px;
+    grid-gap: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
     li {
-      // wide & long
-      &.macmac,
-      &.tks,
-      &.aeberhard,
-      &.isler,
-      &.hertigfleurs {
+      grid-column: span 1;
+      grid-row: span 4;
+      &.wide {
         grid-row: span 2;
-        grid-column: span 2;
-      }
-      // wide
-      &.adler,
-      &.bimbosan,
-      &.aas,
-      &.vulnerabilites,
-      &.gestion {
-        grid-column: span 2;
-      }
-      // high
-      &.easytube,
-      &.cci {
-        grid-row: span 2;
-      }
-      &.tsantsa {
-        grid-row-start: 10;
-      }
-      &.probation {
-        grid-row-start: 6;
-        grid-column-start: 2;
-      }
-      &.sms {
-        grid-column-start: 2;
-        grid-row-start: 16;
       }
     }
+  }
+  @media (max-width: 600px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  @include xs {
+    grid-auto-rows: 60px;
   }
   // HOVER FIXES
   @include sm {
@@ -362,30 +253,6 @@ export default {
       }
       .project-viewurl {
         @include font-bold;
-      }
-    }
-  }
-  @include xs {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 80vw;
-    li {
-      &.vulnerabilites,
-      &.gestion {
-        .image-wrapper {
-          background-position: left top;
-        }
-      }
-      &.matuzon,
-      &.kaeserei,
-      &.sms {
-        .image-wrapper {
-          background-position: center center;
-        }
-      }
-      &.bimbosan {
-        .image-wrapper {
-          background-position: right top;
-        }
       }
     }
   }
@@ -412,9 +279,6 @@ export default {
         }
         .screen {
           opacity: 1;
-        }
-        .star {
-          transform: scale(1.3);
         }
         .project-title-wrapper .tech .icon {
           opacity: 1;
@@ -486,11 +350,11 @@ export default {
   .favorite {
     pointer-events: none;
     position: absolute;
-    bottom: -52px;
+    bottom: -40px;
     right: -25px;
     box-shadow: -1px -1px 20px 0 rgba(0, 0, 0, 0.3);
-    background-color: $blue;
-    width: 150px;
+    background: linear-gradient(90deg, #020024 0%, #4545bf 57%, #2dceef 100%);
+    width: 170px;
     height: 80px;
     transform: rotate(-25deg);
     transform-origin: 50% 50%;
@@ -498,14 +362,14 @@ export default {
   }
   .star {
     pointer-events: none;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    bottom: 15px;
-    right: 15px;
-    transition: transform 0.25s ease;
+    bottom: 17px;
+    right: 17px;
+    animation: 0.5s jump ease infinite alternate;
     polygon {
-      fill: $lightgray;
+      fill: $white;
     }
   }
   .project-title-wrapper {
@@ -543,6 +407,9 @@ export default {
           height: 20px;
           max-width: 20px;
         }
+        @include sm {
+          display: none;
+        }
       }
     }
     .project-title {
@@ -577,7 +444,16 @@ export default {
   a {
     border-bottom: 1px dotted $darkblue;
     color: $darkblue;
-    // @include font-bold;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
 }
 </style>
