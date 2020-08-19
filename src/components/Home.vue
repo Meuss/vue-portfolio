@@ -12,8 +12,8 @@
           <socials></socials>
           <div class="cvs">
             <strong>CV [.pdf] :</strong>
-            <a href="/static/CV_Thomas_Miller_EN.pdf" target="_blank">English</a>
-            <a href="/static/CV_Thomas_Miller_FR.pdf" target="_blank">Français</a>
+            <a href="/static/CV_T.Miller_2020_EN.pdf" target="_blank">English</a>
+            <a href="/static/CV_T.Miller_2020_FR.pdf" target="_blank">Français</a>
           </div>
         </div>
         <div class="line"></div>
