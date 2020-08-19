@@ -18,10 +18,15 @@
         </div>
         <div class="line"></div>
         <div class="desc">
-          <p>Passionate front-end web developer from Bulle, Switzerland</p>
-          <p><strong>Currently looking for a new job opportunity.</strong></p>
-          <p>Open to freelance projects or part-time contract work as well.</p>
-          <p>Take a look at my <router-link to="/projects">portfolio</router-link>.</p>
+          <p>Passionate front-end web developer from Bulle, Switzerland.</p>
+          <p>
+            Currently working at <strong><a href="https://925.ch/">925 Interactive Sàrl</a></strong
+            >, open to freelance projects as well.
+          </p>
+          <p>
+            Take a look at my <strong><router-link to="/projects">portfolio</router-link></strong
+            >.
+          </p>
         </div>
       </div>
       <footer>

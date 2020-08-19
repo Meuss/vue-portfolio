@@ -18,7 +18,7 @@
     "year": "2018",
     "viewurl": "macmac.ch",
     "tech": ["vue", "cloudinary", "greensock", "javascript", "sass"],
-    "img": "macmac.jpg",
+    "img": "macmac-3.jpg",
     "size": "big"
   },
   {
@@ -32,7 +32,16 @@
     "img": "adler.jpg",
     "size": "wide"
   },
-
+  {
+    "name": "Coworking Sennlab",
+    "shortname": "sennlab",
+    "year": "2020",
+    "viewurl": "sennlab.ch",
+    "url": "https://sennlab.ch",
+    "tech": ["kirby", "sass"],
+    "img": "sennlab-2.jpg",
+    "size": ""
+  },
   {
     "name": "Professions en exécution des sanctions",
     "shortname": "professions",
