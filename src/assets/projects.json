@@ -75,16 +75,6 @@
     "size": "wide"
   },
   {
-    "name": "Tsantsa",
-    "shortname": "tsantsa",
-    "year": "2017",
-    "viewurl": "tsantsa.ch",
-    "url": "https://archive.tsantsa.ch/en",
-    "tech": ["kirby", "php", "sass"],
-    "img": "tsantsa.jpg",
-    "size": ""
-  },
-  {
     "name": "cricprint",
     "shortname": "cric",
     "year": "2018",
@@ -154,16 +144,6 @@
     "url": "http://bimbosan.ch/",
     "tech": ["wordpress", "php", "javascript", "sass"],
     "img": "bimbosan.jpg",
-    "size": "wide"
-  },
-  {
-    "name": "Gestion de fortune",
-    "shortname": "gestion",
-    "year": "2020",
-    "viewurl": "gestion-de-fortune.ch",
-    "url": "https://gestion-de-fortune.ch",
-    "tech": ["wordpress", "css", "javascript"],
-    "img": "gestion.jpg",
     "size": "wide"
   },
   {

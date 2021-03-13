@@ -79,6 +79,7 @@
     <div class="others">
       <h1>Other noteworthy websites</h1>
       <ul>
+        <li><a href="https://niche.cc/" target="blank">niche.cc</a></li>
         <li><a href="https://dietschweiler-stiftung.ch/" target="blank">dietschweiler-stiftung.ch</a></li>
         <li><a href="http://www.neuenschwanderag.com" target="blank">neuenschwanderag.com</a></li>
         <li><a href="https://schwery.com/" target="blank">schwery.com</a></li>
@@ -123,12 +124,12 @@ export default {
     calculateImgSizes() {
       // load the appropriate images from cloudinary
       /* eslint-disable-next-line */
-      Array.from(document.querySelectorAll('ul.wrapper li a .image-wrapper[data-img]')).forEach((image) => {
+      Array.from(document.querySelectorAll('ul.wrapper li a .image-wrapper[data-img]')).forEach(image => {
         const desiredSize = Math.ceil(image.parentElement.clientWidth);
         // only get from a subset of images (because of cloudinary transforms limit)
         const sizes = [200, 300, 500, 800, 1080, 1600];
         /* eslint-disable-next-line */
-        const result = sizes.filter((number) => number > desiredSize);
+        const result = sizes.filter(number => number > desiredSize);
         const imageSize = `w_${this.closestNumber(result, desiredSize)}`;
         let extraParams = '';
         if (store.state.pixelRatio === 1) {
@@ -142,7 +143,7 @@ export default {
       });
     },
     /* eslint-disable-next-line */
-    closestNumber: function (array, num) {
+    closestNumber: function(array, num) {
       let i = 0;
       let minDiff = 1000;
       let ans;

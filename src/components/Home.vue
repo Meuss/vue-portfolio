@@ -20,7 +20,7 @@
         <div class="desc">
           <p>Passionate front-end web developer from Bulle, Switzerland.</p>
           <p>
-            Currently working at <strong><a href="https://925.ch/">925 Interactive Sàrl</a></strong
+            Currently working at <strong><a href="https://marvelous.digital/">Marvelous Digital</a></strong
             >, open to freelance projects as well.
           </p>
           <p>
